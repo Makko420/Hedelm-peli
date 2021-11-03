@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="flex-item-1">
+            <div id="stats">  
+                <div id="money">
+                    <h2 id="money2">RAHAA: 50€</h2>
+                    <h2 id="betAmount">PANOS: 1€</h2>
+                </div> 
+                <div class="flex-container" class="panos">
+                    <div class="panos">
+                        <button class="panos" onclick="setPanos1()">
+                            <h3>1€</h3>
+                        </button>
+                    </div>
+                    <div class="panos">
+                        <button class="panos" onclick="setPanos2()">
+                            <h3>2€</h3>
+                        </button>
+                    </div>
+                    <div class="panos">
+                        <button class="panos" onclick="setPanos3()">
+                            <h3>3€</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="roller">
+                <div class="flex-container" id="roll">
+                    <div class="game"><img id="1" src="img/seven.png" alt="no"></div>
+                    <div class="game"><img id="2" src="img/seven.png" alt="no"></div>
+                    <div class="game"><img id="3" src="img/seven.png" alt="no"></div>
+                    <div class="game"><img id="4" src="img/seven.png" alt="no"></div>
+                </div>
+                <div class="flex-container">
+                    <div class="lockRollers">
+                        <button>
+                            <img src="img/unlocked.png" alt="unlocked">
+                        </button>
+                    </div>
+                    <div class="lockRollers">
+                        <button>
+                            <img src="img/unlocked.png" alt="unlocked">
+                        </button>
+                    </div>
+                    <div class="lockRollers">
+                        <button>
+                            <img src="img/unlocked.png" alt="unlocked">
+                        </button>
+                    </div>
+                    <div class="lockRollers">
+                        <button>
+                            <img src="img/unlocked.png" alt="unlocked">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex-item-2">
+            <div id="info">
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container" id="cherrys">
+                        <img src="img/cherry4.png" alt="fourCherrys">
+                        <div class="flex-container coin">
+                            <h1>3</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container"  id="pears">
+                        <img src="img/pear4.png" alt="fourPears">
+                        <div class="flex-container coin">
+                            <h1>4</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container" id="watermelon">
+                        <img src="img/watermelon4.png" alt="fourMelons">
+                        <div class="flex-container coin">
+                            <h1>5</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container" id="apples">
+                        <img src="img/apple4.png" alt="fourApples">
+                        <div class="flex-container coin">
+                            <h1>6</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container" id="777">
+                        <img src="img/seven3.png" alt="threeSevens">
+                        <div class="flex-container coin">
+                            <h1>5</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div class="infoCoin flex-container" id="7777" style="border-bottom: 3px solid  rgb(52, 213, 52);;">
+                        <img src="img/seven4.png" alt="fourSevens">
+                        <div class="flex-container coin">
+                            <h1>10</h1>
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="play" onclick="roll()">
+                <div>
+                    <h1>PELAA</h1>
+                </div>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

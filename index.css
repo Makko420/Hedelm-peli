@@ -1,0 +1,72 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.infoCoin {
+    border-left:  3px solid rgb(52, 213, 52);
+    border-right:  3px solid rgb(52, 213, 52);
+    border-top:  3px solid rgb(52, 213, 52);
+}
+
+#info {
+    padding: 20px;
+    background-color: rgb(152, 235, 152);
+}
+
+.coin {
+    height: 60px;
+    width: 60px;
+    margin: 8px;
+    background-color: rgb(245, 245, 220);
+    border: 2px solid grey;
+}
+
+#stats {
+    background-color: rgb(152, 235, 152);
+    width: 340px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.game {
+    border: 2px solid rgb(29, 87, 29);
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+#money h2{
+    width: 300px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    font-family: arial;
+    border: 3px solid rgb(52, 213, 52);
+}
+
+#money {
+    padding: 15px;
+}
+
+.panos {
+    padding: 22px;
+    margin: auto;
+}
+
+#flex-item-1 {
+    margin: 50px;
+}
+
+.lockRollers {
+    margin: auto;
+    margin-top: 15px;
+}
+
+#play {
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 400px;
+    height: 150px;
+}
+
+
+ 
