@@ -1,32 +1,35 @@
 var money = 50;
 var bet = 1;
 var lock = true;
-var lockedSlot = 0;
-var lockedSlotValue = 0;
 var slot1 = 10;
+var slot1Lock = false;
 var slot2 = 10;
+var slot2Lock = false;
 var slot3 = 10;
+var slot3Lock = false;
 var slot4 = 10;
+var slot4Lock = false;
+
 
 
 function hedelmapeli() {
     if (bet <= money) {
-        if (lockedSlot != 1) {
+        if (slot1Lock == false) {
             roll(1)
         }
-        if (lockedSlot != 2) {
+        if (slot2Lock == false) {
             roll(2)
         }
-        if (lockedSlot != 3) {
+        if (slot3Lock == false) {
             roll(3)
         }
-        if (lockedSlot != 4) {
+        if (slot4Lock == false) {
             roll(4)
         }
-        checkWins();
     } else {
         alert("Ei ole tarpeeksi rahaa!")
     }
+    checkWins();
 }
 
 
@@ -118,26 +121,28 @@ function checkWins() {
     document.getElementById("6").src = "img/unlocked.png";
     document.getElementById("7").src = "img/unlocked.png";
     document.getElementById("8").src = "img/unlocked.png";
-    lockedSlot = 0;
+    slot1Lock = false;
+    slot2Lock = false;
+    slot3Lock = false;
+    slot4Lock = false;
 }
 
 function locked(i) {
     if (lock == false) {
         if (i == 1) {
-            lockedSlot = 1;
+            slot1Lock = true;
             document.getElementById("5").src = "img/locked.png";
         } else if (i == 2) {
-            lockedSlot = 2;
+            slot2Lock = true;;
             document.getElementById("6").src = "img/locked.png";
         } else if (i == 3) {
-            lockedSlot = 3;
+            slot3Lock = true;;
             document.getElementById("7").src = "img/locked.png";
         } else if (i == 4) {
-            lockedSlot = 4;
+            slot4Lock = true;;
             document.getElementById("8").src = "img/locked.png";
         }
-        lock = true;
     } else {
-        alert("yksi lukko on lukossa jo tai et pysty käyttämään sitä tällä hetkellä!");
+        alert("Et pysty lukitsemaan rullia tällä hetkellä!");
     }
 }
